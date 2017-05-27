@@ -1,0 +1,11 @@
+ {% extends 'base.html' %}
+ 
+ {% block title %}
+     欢
+ {% endblock  %}
+  {% block content %}
+  首页
+  {% for item in data %}
+  {{item}} {{ item }}{% if not forloop.last %},{% endif %} 
+  {%endfor%}
+  {% endblock %}
